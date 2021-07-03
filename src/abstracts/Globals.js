@@ -10,6 +10,7 @@ const Globals = createGlobalStyle`
     /* primary */
     --softRed: hsl(7, 99%, 70%);
     --yellow:  hsl(51, 100%, 49%);
+    --teal: hsla(200, 100%, 62%, 0.9);
     /* (graphic design text) */
     --darkDesaturatedCyan: hsl(167, 40%, 24%);
     /* (photography text) */
