@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import { textStyles } from '../abstracts/Mixins';
 import logo from '../images/logo.svg';
 import Button from './Button';
-import { textStyles } from '../abstracts/Mixins';
 
 const Nav = styled.nav`
   background-color: var(--teal);

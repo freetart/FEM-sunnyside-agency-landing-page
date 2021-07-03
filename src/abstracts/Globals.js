@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const Globals = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap');
-
   :root {
     /* colors */
     --black: #222;
@@ -10,7 +8,7 @@ const Globals = createGlobalStyle`
     /* primary */
     --softRed: hsl(7, 99%, 70%);
     --yellow:  hsl(51, 100%, 49%);
-    --teal: hsla(200, 100%, 62%, 0.9);
+    --teal: hsla(200, 100%, 62%, 1);
     /* (graphic design text) */
     --darkDesaturatedCyan: hsl(167, 40%, 24%);
     /* (photography text) */
