@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { headingStyles } from '../abstracts/Mixins';
+import { headingStyles } from '../../abstracts/Mixins';
 
-const Button = styled.a`
+export const Button = styled.a`
   ${headingStyles};
   letter-spacing: 0;
   padding: 1.5rem 2rem;
@@ -21,5 +21,3 @@ const Button = styled.a`
     color: ${({ primary }) => primary && 'var(--white)'};
   }
 `;
-
-export default Button;
