@@ -9,7 +9,7 @@ const Nav = styled.nav`
   width: 100%;
 
   .nav-content {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,6 +29,11 @@ const Nav = styled.nav`
     ${textStyles}
     color: var(--white);
     font-size: var(--sizeXs);
+
+    &:hover,
+    &:focus {
+      border-bottom: 0.1rem solid var(--white);
+    }
   }
 `;
 
