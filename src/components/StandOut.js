@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Heading } from './styledComponents/Heading';
 import { Paragraph } from './styledComponents/Paragraph';
 import { FancyLink } from './styledComponents/FancyLink';
-import sectionImage from '../images/desktop/image-transform.jpg';
+import sectionImage from '../images/desktop/image-stand-out.jpg';
 
 const Container = styled.div`
   display: grid;
@@ -19,23 +19,23 @@ const Container = styled.div`
   }
 `;
 
-const TransformBrand = () => {
+const StandOut = () => {
   return (
     <section>
       <Container>
-        <div className='info'>
-          <Heading>Transform your brand</Heading>
-          <Paragraph>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </Paragraph>
-          <FancyLink yellow>Learn more</FancyLink>
-        </div>
         <img src={sectionImage} alt='' />
+        <div className='info'>
+          <Heading>Stand out to the right audience</Heading>
+          <Paragraph>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </Paragraph>
+          <FancyLink softRed>Learn more</FancyLink>
+        </div>
       </Container>
     </section>
   );
 };
 
-export default TransformBrand;
+export default StandOut;
