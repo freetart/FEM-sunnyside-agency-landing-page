@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import Tag from './components/Tag';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Gallery />
       </main>
       <Footer />
+      <Tag />
     </>
   );
 }
