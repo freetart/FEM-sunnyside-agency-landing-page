@@ -11,6 +11,7 @@ const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 
   ${Responsive.lg`
     grid-template-columns: 1fr;
