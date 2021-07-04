@@ -5,6 +5,7 @@ import TransformBrand from './components/TransformBrand';
 import StandOut from './components/StandOut';
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <StandOut />
         <Services />
         <Testimonials />
+        <Gallery />
       </main>
     </>
   );

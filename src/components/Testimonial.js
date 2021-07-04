@@ -14,7 +14,7 @@ const Container = styled.div`
   .testimonial-quote {
     ${textStyles};
     font-size: var(--sizeXs);
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 
   .testimonial-user {
