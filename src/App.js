@@ -2,6 +2,7 @@ import { useState } from 'react';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Globals from './abstracts/Globals';
+import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import TransformBrand from './components/TransformBrand';
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <Globals />
+      <Sidebar isActive={isActive} />
       <Navbar isActive={isActive} setIsActive={setIsActive} />
       <Header />
       <main>

@@ -7,16 +7,16 @@ const Button = styled.button`
   background: transparent;
   outline: 0;
   border: 0;
-  z-index: 100;
+  position: fixed;
+  z-index: 2000;
+  right: 2rem;
+  top: 1.5rem;
 
   ${Responsive.md`
       display: block;
   `}
 
   .toggle-icon {
-    position: fixed;
-    right: 2rem;
-    top: 1.5rem;
     color: var(--white);
     font-size: var(--sizeMd);
   }

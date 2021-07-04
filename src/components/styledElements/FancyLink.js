@@ -14,6 +14,8 @@ export const FancyLink = styled.a`
 
   border-bottom: ${({ softRed }) => softRed && '0.5rem dotted var(--softRed)'};
 
+  border-bottom: ${({ teal }) => teal && '0.5rem dotted var(--teal)'};
+
   &:hover,
   &:focus {
     letter-spacing: 0.3rem;
