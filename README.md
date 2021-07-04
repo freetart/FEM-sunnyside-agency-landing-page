@@ -2,6 +2,8 @@
 
 landing page challenge for frontend mentor
 
+site: https://fem-sunnyside-agency-landing-page-challenge.netlify.app/
+
 #### Features
 
 - hamburger menu & sidebar
