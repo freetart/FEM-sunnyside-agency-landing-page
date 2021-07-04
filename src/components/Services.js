@@ -4,6 +4,7 @@ import { Heading } from './styledElements/Heading';
 import { Paragraph } from './styledElements/Paragraph';
 import graphicDesign from '../images/desktop/image-graphic-design.jpg';
 import photography from '../images/desktop/image-photography.jpg';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   display: grid;
@@ -11,11 +12,24 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 
+  ${Responsive.lg`
+    grid-template-columns: 1fr;
+  `}
+
   .info {
     ${flexCenter};
     flex-direction: column;
     justify-content: flex-end;
     height: 80vh;
+    text-align: center;
+
+    ${Responsive.md`
+      height: 50vh;
+    `}
+
+    ${Responsive.sm`
+      height: 80vh;
+    `}
   }
 
   .graphic-design {

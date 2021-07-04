@@ -3,6 +3,7 @@ import { maxWidthLg, sectionSpacingLg } from '../abstracts/Mixins';
 import { Heading } from './styledElements/Heading';
 import Testimonial from './Testimonial';
 import testimonialData from '../data';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   ${maxWidthLg};
@@ -10,6 +11,12 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
+
+  ${Responsive.lg`
+    grid-template-columns: 1fr;
+    gap: 10rem;
+    padding: 10rem 2rem;
+  `}
 `;
 
 const Testimonials = () => {

@@ -12,6 +12,7 @@ const Article = styled.article`
     ${textStyles};
     font-size: var(--sizeXs);
     color: var(--white);
+    text-align: center;
   }
 
   .tag-link {

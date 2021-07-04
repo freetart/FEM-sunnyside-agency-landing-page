@@ -3,6 +3,7 @@ import { Heading } from './styledElements/Heading';
 import { Paragraph } from './styledElements/Paragraph';
 import { FancyLink } from './styledElements/FancyLink';
 import sectionImage from '../images/desktop/image-stand-out.jpg';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   display: grid;
@@ -10,12 +11,30 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 
+  ${Responsive.lg`
+    grid-template-columns: 1fr;
+  `}
+
   .info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 75%;
     margin: 0 auto;
+
+    ${Responsive.lg`
+      order: -1;
+      padding: 5rem;
+      width: 100%;
+    `}
+
+    ${Responsive.sm`
+      padding: 2rem;
+    `}
+  }
+
+  img {
+    height: 100%;
   }
 `;
 

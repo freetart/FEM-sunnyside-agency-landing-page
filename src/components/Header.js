@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { flexCenter, headingStyles } from '../abstracts/Mixins';
 import heroImg from '../images/desktop/image-header.jpg';
 import iconArrow from '../images/icon-arrow-down.svg';
+import Responsive from '../abstracts/Responsive';
 
 const Hero = styled.header`
   height: 100vh;
@@ -23,10 +24,27 @@ const Hero = styled.header`
     text-transform: uppercase;
     display: flex;
     gap: 3rem;
+    flex-wrap: wrap;
+    text-align: center;
+    ${flexCenter};
+
+    ${Responsive.sm`
+      font-size: 6rem;
+      gap: 2rem;
+    `}
+
+    ${Responsive.xs`
+      font-size: var(--sizeXxl);
+      gap: 1.5rem;
+    `}
   }
 
   .hero-icon {
     width: 5rem;
+
+    ${Responsive.xs`
+      width: 3rem;
+    `}
   }
 `;
 

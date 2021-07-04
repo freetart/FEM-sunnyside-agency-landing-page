@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import logo from '../images/logo.svg';
 import { Button } from './styledElements/Button';
 import Link from './styledElements/Link';
+import Responsive from '../abstracts/Responsive';
 
 const Nav = styled.nav`
   background-color: var(--teal);
@@ -24,6 +25,10 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    ${Responsive.md`
+      display: none;
+    `}
   }
 `;
 

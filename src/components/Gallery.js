@@ -3,10 +3,19 @@ import gallery1 from '../images/desktop/image-gallery-milkbottles.jpg';
 import gallery2 from '../images/desktop/image-gallery-orange.jpg';
 import gallery3 from '../images/desktop/image-gallery-cone.jpg';
 import gallery4 from '../images/desktop/image-gallery-sugarcubes.jpg';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  img {
+    height: 100%;
+  }
+
+  ${Responsive.sm`
+    grid-template-columns: repeat(2,1fr);
+  `}
 `;
 
 const Gallery = () => {
