@@ -8,6 +8,7 @@ const Hero = styled.header`
   height: 100vh;
   width: 100vw;
   background: url(${heroImg}) center center/cover no-repeat;
+  overflow-x: hidden;
 
   .hero-content {
     ${flexCenter};
