@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { textStyles } from '../abstracts/Mixins';
 import logo from '../images/logo.svg';
-import { Button } from './styledComponents/Button';
+import { Button } from './styledElements/Button';
+import Link from './styledElements/Link';
 
 const Nav = styled.nav`
   background-color: var(--teal);
@@ -24,17 +24,6 @@ const Nav = styled.nav`
     align-items: center;
     gap: 4rem;
   }
-
-  .nav-link {
-    ${textStyles}
-    color: var(--white);
-    font-size: var(--sizeXs);
-
-    &:hover,
-    &:focus {
-      border-bottom: 0.1rem solid var(--white);
-    }
-  }
 `;
 
 const Navbar = () => {
@@ -44,19 +33,13 @@ const Navbar = () => {
         <img src={logo} alt='sunnyside logo' className='nav-logo' />
         <ul className='nav-list'>
           <li className='nav-item'>
-            <a href='#!' className='nav-link'>
-              About
-            </a>
+            <Link nav>About</Link>
           </li>
           <li className='nav-item'>
-            <a href='#!' className='nav-link'>
-              Services
-            </a>
+            <Link nav>Services</Link>
           </li>
           <li className='nav-item'>
-            <a href='#!' className='nav-link'>
-              Projects
-            </a>
+            <Link nav>Projects</Link>
           </li>
           <Button primary>Contact</Button>
         </ul>

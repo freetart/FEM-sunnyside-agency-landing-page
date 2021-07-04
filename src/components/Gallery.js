@@ -13,10 +13,10 @@ const Gallery = () => {
   return (
     <section>
       <Container>
-        <img src={gallery1} alt='gallery image' />
-        <img src={gallery2} alt='gallery image' />
-        <img src={gallery3} alt='gallery image' />
-        <img src={gallery4} alt='gallery image' />
+        <img src={gallery1} alt='gallery one' />
+        <img src={gallery2} alt='gallery two' />
+        <img src={gallery3} alt='gallery three' />
+        <img src={gallery4} alt='gallery four' />
       </Container>
     </section>
   );

@@ -9,12 +9,9 @@ const Globals = createGlobalStyle`
     --softRed: hsl(7, 99%, 70%);
     --yellow:  hsl(51, 100%, 49%);
     --teal: hsla(200, 100%, 62%, 0.8);
-    /* (graphic design text) */
     --darkDesaturatedCyan: hsl(167, 40%, 24%);
-    /* (photography text) */
     --darkBlue: hsl(198, 62%, 26%);
-    /* (footer) */
-    --darkModerateCyan: hsl(168, 34%, 41%);
+    --darkModerateCyan: hsl(168, 34%, 61%);
     /* neutral */
     --darkDesaturatedBlue: hsl(212, 27%, 19%);
     --VeryDarkGrayishBlue: hsl(213, 9%, 39%);

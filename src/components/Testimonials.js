@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { maxWidthLg, sectionSpacingLg } from '../abstracts/Mixins';
-import { Heading } from './styledComponents/Heading';
+import { Heading } from './styledElements/Heading';
 import Testimonial from './Testimonial';
 import testimonialData from '../data';
 

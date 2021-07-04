@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { flexCenter } from '../abstracts/Mixins';
-import { Heading } from './styledComponents/Heading';
-import { Paragraph } from './styledComponents/Paragraph';
+import { Heading } from './styledElements/Heading';
+import { Paragraph } from './styledElements/Paragraph';
 import graphicDesign from '../images/desktop/image-graphic-design.jpg';
 import photography from '../images/desktop/image-photography.jpg';
 

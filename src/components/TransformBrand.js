@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Heading } from './styledComponents/Heading';
-import { Paragraph } from './styledComponents/Paragraph';
-import { FancyLink } from './styledComponents/FancyLink';
+import { Heading } from './styledElements/Heading';
+import { Paragraph } from './styledElements/Paragraph';
+import { FancyLink } from './styledElements/FancyLink';
 import sectionImage from '../images/desktop/image-transform.jpg';
 
 const Container = styled.div`
