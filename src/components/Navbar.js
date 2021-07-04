@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import logo from '../images/logo.svg';
 import { Button } from './styledElements/Button';
 import Link from './styledElements/Link';
+import ToggleSidebar from './ToggleSidebar';
 import Responsive from '../abstracts/Responsive';
 
 const Nav = styled.nav`
@@ -32,7 +33,7 @@ const Nav = styled.nav`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ isActive, setIsActive }) => {
   return (
     <Nav>
       <div className='nav-content'>
@@ -49,6 +50,7 @@ const Navbar = () => {
           </li>
           <Button primary>Contact</Button>
         </ul>
+        <ToggleSidebar isActive={isActive} setIsActive={setIsActive} />
       </div>
     </Nav>
   );

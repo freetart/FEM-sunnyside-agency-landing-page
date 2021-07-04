@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Globals from './abstracts/Globals';
@@ -12,11 +13,12 @@ import Footer from './components/Footer';
 import Tag from './components/Tag';
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
   AOS.init({ offset: 100, duration: 1000, once: true });
   return (
     <>
       <Globals />
-      <Navbar />
+      <Navbar isActive={isActive} setIsActive={setIsActive} />
       <Header />
       <main>
         <TransformBrand />
