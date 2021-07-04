@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { textStyles } from '../../abstracts/Mixins';
 
 export const Paragraph = styled.p`
@@ -6,10 +6,17 @@ export const Paragraph = styled.p`
   font-size: var(--sizeXs);
   color: var(--DarkGrayishBlue);
 
-  color: ${({ graphicDesign }) =>
-    graphicDesign && 'var(--darkDesaturatedCyan)'};
-  text-align: ${({ graphicDesign }) => graphicDesign && 'center'};
+  ${({ graphicDesign }) =>
+    graphicDesign &&
+    css`
+      color: var(--darkDesaturatedCyan);
+      text-align: center;
+    `}
 
-  color: ${({ photography }) => photography && 'var(--darkBlue)'};
-  text-align: ${({ photography }) => photography && 'center'};
+  ${({ photography }) =>
+    photography &&
+    css`
+      color: var(--darkBlue);
+      text-align: center;
+    `}
 `;

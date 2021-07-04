@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { headingStyles } from '../../abstracts/Mixins';
 
 export const Button = styled.a`
@@ -12,12 +12,20 @@ export const Button = styled.a`
   font-size: var(--sizeXs);
   transition: var(--mainTransition);
 
-  background-color: ${({ primary }) => primary && 'var(--white)'};
-  color: ${({ primary }) => primary && 'var(--black)'};
+  ${({ primary }) =>
+    primary &&
+    css`
+      background-color: var(--white);
+      color: var(--black);
+    `}
 
   &:hover,
   &:focus {
-    background-color: ${({ primary }) => primary && 'var(--teal)'};
-    color: ${({ primary }) => primary && 'var(--white)'};
+    ${({ primary }) =>
+      primary &&
+      css`
+        background-color: var(--teal);
+        color: var(--white);
+      `}
   }
 `;

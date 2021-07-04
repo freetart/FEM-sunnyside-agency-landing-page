@@ -4,6 +4,7 @@ import Header from './components/Header';
 import TransformBrand from './components/TransformBrand';
 import StandOut from './components/StandOut';
 import Services from './components/Services';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <TransformBrand />
         <StandOut />
         <Services />
+        <Testimonials />
       </main>
     </>
   );

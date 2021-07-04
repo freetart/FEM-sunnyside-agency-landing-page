@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { headingStyles } from '../../abstracts/Mixins';
 
 export const Heading = styled.h2`
@@ -10,4 +10,14 @@ export const Heading = styled.h2`
     graphicDesign && 'var(--darkDesaturatedCyan)'};
 
   color: ${({ photography }) => photography && 'var(--darkBlue)'};
+
+  ${({ testimonialHeading }) =>
+    testimonialHeading &&
+    css`
+      color: var(--grayishBlue);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      padding-top: 10rem;
+    `}
 `;
