@@ -41,7 +41,8 @@ const Aside = styled.aside`
   }
 
   .sidebar-button {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
   }
 `;
