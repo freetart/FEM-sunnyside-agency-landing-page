@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import '../node_modules/aos/dist/aos.css';
 import Globals from './abstracts/Globals';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -10,6 +12,7 @@ import Footer from './components/Footer';
 import Tag from './components/Tag';
 
 function App() {
+  AOS.init({ offset: 100, duration: 1000, once: true });
   return (
     <>
       <Globals />

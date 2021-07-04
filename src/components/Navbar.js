@@ -7,6 +7,7 @@ const Nav = styled.nav`
   background-color: var(--teal);
   position: fixed;
   width: 100%;
+  z-index: 1000;
 
   .nav-content {
     padding: 1rem 2rem;

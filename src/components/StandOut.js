@@ -23,7 +23,7 @@ const StandOut = () => {
   return (
     <section>
       <Container>
-        <img src={sectionImage} alt='' />
+        <img src={sectionImage} alt='' data-aos='fade-right' />
         <div className='info'>
           <Heading>Stand out to the right audience</Heading>
           <Paragraph>

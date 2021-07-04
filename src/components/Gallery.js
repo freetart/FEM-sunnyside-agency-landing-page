@@ -13,10 +13,25 @@ const Gallery = () => {
   return (
     <section>
       <Container>
-        <img src={gallery1} alt='gallery one' />
-        <img src={gallery2} alt='gallery two' />
-        <img src={gallery3} alt='gallery three' />
-        <img src={gallery4} alt='gallery four' />
+        <img src={gallery1} alt='gallery one' data-aos='fade-down' />
+        <img
+          src={gallery2}
+          alt='gallery two'
+          data-aos='fade-down'
+          data-aos-delay='250'
+        />
+        <img
+          src={gallery3}
+          alt='gallery three'
+          data-aos='fade-down'
+          data-aos-delay='450'
+        />
+        <img
+          src={gallery4}
+          alt='gallery four'
+          data-aos='fade-down'
+          data-aos-delay='650'
+        />
       </Container>
     </section>
   );

@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <section>
       <Container>
-        <div className={'info graphic-design'}>
+        <div className={'info graphic-design'} data-aos='fade-right'>
           <Heading graphicDesign>Graphic design</Heading>
           <Paragraph graphicDesign>
             Great design makes you memorable. We deliver artwork that
@@ -41,7 +41,7 @@ const Services = () => {
             attention.
           </Paragraph>
         </div>
-        <div className={'info photography'}>
+        <div className={'info photography'} data-aos='fade-left'>
           <Heading photography>Photography</Heading>
           <Paragraph photography>
             Increase your credibility by getting the most stunning, high-quality

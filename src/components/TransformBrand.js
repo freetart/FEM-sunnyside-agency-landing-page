@@ -32,7 +32,7 @@ const TransformBrand = () => {
           </Paragraph>
           <FancyLink yellow>Learn more</FancyLink>
         </div>
-        <img src={sectionImage} alt='' />
+        <img src={sectionImage} alt='' data-aos='fade-left' />
       </Container>
     </section>
   );

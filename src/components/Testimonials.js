@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Testimonials = () => {
   return (
-    <section>
+    <section data-aos='fade-up'>
       <Heading testimonialHeading>Client Testimonials</Heading>
       <Container>
         {testimonialData.map((test, index) => {

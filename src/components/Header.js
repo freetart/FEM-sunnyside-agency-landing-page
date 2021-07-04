@@ -21,6 +21,8 @@ const Hero = styled.header`
     color: var(--white);
     font-size: 10rem;
     text-transform: uppercase;
+    display: flex;
+    gap: 3rem;
   }
 
   .hero-icon {
@@ -32,8 +34,22 @@ const Header = () => {
   return (
     <Hero>
       <div className='hero-content'>
-        <h1 className='hero-heading'>We Are Creatives</h1>
-        <img src={iconArrow} alt='' className='hero-icon' />
+        <h1 className='hero-heading'>
+          <span data-aos='zoom-out-right'>We</span>
+          <span data-aos='zoom-out-down' data-aos-delay='100'>
+            Are
+          </span>
+          <span data-aos='zoom-out-left' data-aos-delay='200'>
+            Creatives
+          </span>
+        </h1>
+        <img
+          src={iconArrow}
+          alt=''
+          className='hero-icon'
+          data-aos='fade-down'
+          data-aos-delay='500'
+        />
       </div>
     </Hero>
   );
